@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.twitter.elephantbird</groupId>
     <artifactId>elephant-bird</artifactId>
-    <version>3.0.6-SNAPSHOT</version>
+    <version>3.0.6-gg</version>
     <relativePath>..</relativePath>
   </parent>
 
@@ -58,6 +58,11 @@
       <plugin>
         <groupId>com.github.igor-petruk.protobuf</groupId>
         <artifactId>protobuf-maven-plugin</artifactId>
+          <configuration>
+              <inputDirectories>
+                  <inputDirectory>${basedir}/src/main/protobuf</inputDirectory>
+              </inputDirectories>
+          </configuration>
         <executions>
           <execution>
             <goals>
